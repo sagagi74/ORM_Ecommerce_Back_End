@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
     });
 
     if (!product) {
-      res.status(404).json({ message: 'No product found with this id!' });
+      res.status(404).json({ message: 'No product associated with this id!' });
       return;
     }
 
@@ -79,7 +79,7 @@ router.put('/:id', async (req, res) => {
       ]);
     }
 
-    res.status(200).json({ message: 'Product updated' });
+    res.status(200).json({ message: 'this Product updated' });
   } catch (err) {
     res.status(400).json(err);
   }
@@ -91,11 +91,11 @@ router.delete('/:id', async (req, res) => {
     const product = await Product.destroy({ where: { id: req.params.id } });
 
     if (!product) {
-      res.status(404).json({ message: 'No product found with this id!' });
+      res.status(404).json({ message: 'No product associated with this id!' });
       return;
     }
 
-    res.status(200).json({ message: 'Product deleted' });
+    res.status(200).json({ message: 'This Product deleted' });
   } catch (err) {
     res.status(500).json(err);
   }
