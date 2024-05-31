@@ -23,7 +23,11 @@ and able to test results using Insomnia example: http://localhost:3001/api/tags 
 you can create, update and delete in Insomnia
 
 ### Database Models
+![Categories](Assets/Capture1.JPG)
 
+![Products](Assets/Capture2.JPG)
+
+![Tags](Assets/Capture3.JPG)
 
 * `Category`
 
